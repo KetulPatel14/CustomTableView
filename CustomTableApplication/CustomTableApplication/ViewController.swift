@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var myCustomTable: UITableView!
+    //@IBOutlet weak var myCustomTable: UITableView!
     
+    @IBOutlet weak var myCustomTable: UITableView!
     struct myCell {
         let title: String
         let imageName: String
@@ -46,6 +47,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         cell.cellImage.image = UIImage(named: content.imageName)
         cell.cellLabel.text = content.title
         return cell
+    }
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) -> CGFloat{
+        return 140
     }
 }
 
