@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myCustomTable: UITableView!
+    
+    struct myCell {
+        let title: String
+        let imageName: String
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
