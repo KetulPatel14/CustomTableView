@@ -13,6 +13,7 @@
 		41B021E829D34FA90001D816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B021E729D34FA90001D816 /* Assets.xcassets */; };
 		41B021EB29D34FA90001D816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B021E929D34FA90001D816 /* LaunchScreen.storyboard */; };
 		41B021F629D34FA90001D816 /* CustomTableApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B021F529D34FA90001D816 /* CustomTableApplicationUITests.swift */; };
+		41B0220329D354020001D816 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0220229D354020001D816 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		41B021F129D34FA90001D816 /* CustomTableApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B021F529D34FA90001D816 /* CustomTableApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableApplicationUITests.swift; sourceTree = "<group>"; };
 		41B021F729D34FA90001D816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B0220229D354020001D816 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				41B021E729D34FA90001D816 /* Assets.xcassets */,
 				41B021E929D34FA90001D816 /* LaunchScreen.storyboard */,
 				41B021EC29D34FA90001D816 /* Info.plist */,
+				41B0220229D354020001D816 /* CustomTableViewCell.swift */,
 			);
 			path = CustomTableApplication;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B0220329D354020001D816 /* CustomTableViewCell.swift in Sources */,
 				41B021E329D34FA70001D816 /* ViewController.swift in Sources */,
 				41B021E129D34FA70001D816 /* AppDelegate.swift in Sources */,
 			);
