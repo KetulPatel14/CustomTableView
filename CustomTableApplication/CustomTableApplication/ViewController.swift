@@ -15,15 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var myCustomTable: UITableView!
     struct myCell {
         let title: String
+        let marks: String
+        let grade: String
         let imageName: String
     }
     
     let data: [myCell] = [
-    myCell(title: "Item1", imageName: "Image"),
-    myCell(title: "Item2", imageName: "Image"),
-    myCell(title: "Item3", imageName: "Image"),
-    myCell(title: "Item4", imageName: "Image"),
-    myCell(title: "Item5", imageName: "Image"),
+        myCell(title: "Ketul", marks: "85", grade: "A", imageName: "Image"),
+    myCell(title: "Harshil" ,marks: "90", grade: "A+" , imageName: "Image"),
+    myCell(title: "Bhumi",marks: "95", grade: "A+", imageName: "Image"),
+    myCell(title: "Shailee",marks: "92", grade: "A+", imageName: "Image"),
+    myCell(title: "Neel", marks: "96", grade: "A+",imageName: "Image"),
     ]
     
     override func viewDidLoad() {
@@ -40,12 +42,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Selected \(data[indexPath.row].title)")
+        print("Selected \(data[indexPath.row].marks)")
+        print("Selected \(data[indexPath.row].grade)")
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let content = data[indexPath.row]
         let cell = myCustomTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         cell.cellImage.image = UIImage(named: content.imageName)
         cell.cellLabel.text = content.title
+        cell.cellMarks.text = content.marks
+        cell.cellGrade.text = content.grade
         return cell
     }
     func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) -> CGFloat{
